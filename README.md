@@ -6,9 +6,9 @@ Add kickstart files to ISOs
 ```
 xorriso -indev /path/to/original.iso \
    -outdev /path/to/new.iso \
-   -volid "FEDORA" \
+   -volid "KSCFG" \
    -add ks.cfg -- \
-   -pathspecs on -add boot/grub2/grub.cfg grub.cfg -- \
+   -pathspecs on -add boot/grub2/grub.cfg=grub.cfg -- \
    -boot_image any replay --
 ```
 
